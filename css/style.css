@@ -1,0 +1,246 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	position: relative;
+	min-height: 100%;
+	padding-bottom: 6rem;
+}
+
+.hide {
+	display: none !important;
+}
+
+.green {
+	background-color: #86D73F;
+	color: #86D73F;
+	border-color: #86D73F;
+}
+
+.blue {
+	background-color: #31BAF9;
+	color: #31BAF9;
+	border-color: #31BAF9;
+}
+
+.light-orange {
+	background-color: #e69405;
+	color: #e69405;
+	border-color: #e69405;
+}
+
+.deep-orange {
+	background-color: #e66a05;
+	color: #e66a05;
+	border-color: #e66a05;
+}
+
+.light-red {
+	background-color: #c32402;
+	color: #c32402;
+	border-color: #c32402;
+}
+
+.deep-red {
+	background-color: #961e05;
+	color: #961e05;
+	border-color: #961e05;
+}
+
+.header {	
+	height: 300px;
+    width: 100%;
+    background-color: #4e4e4e;
+    overflow: hidden;
+}
+
+.header .container {
+	max-width: 1000px;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+    align-items: center; 
+    margin: 0 auto;
+}
+
+.header .logo {
+	width: 100px;
+	height: 100px;
+	background: url('../img/BMICLogo.png');
+	background-size: 100px 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header .input-area label {
+	display: block;
+    color: #ffd366;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: .2rem;
+}
+
+.header .input-area .input {
+	background: #3c3c3c;
+    border: 2px solid #ffd366;
+    color: #ffd366;
+    border-radius: 5px;
+    height: 30px;
+    line-height: 30px;
+    padding-left: .4rem;
+}
+
+.header .input-area input:focus {
+	outline: none;
+}
+
+.header .result {
+	width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+.header .result .calculate .calc-btn {
+	position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    background-color: #ffd366;
+    color: #000;
+    border-radius: 99em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+.header .result .circular {
+	position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    color: #000;
+    border-radius: 99em;
+    border: 2px solid #ffd366;
+    outline: none;
+    cursor: pointer;
+    color: #ffd366;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+}
+
+.header .result .number {
+
+}
+
+.header .result .text {
+	
+}
+
+.header .result .refresh {
+	position: absolute; 
+    top: 70px;
+    left: 63px;
+    cursor: pointer;
+    background: #ffd366 url(../img/icons_loop.png) no-repeat;
+    border-radius: 99em;
+    border: none;
+    width: 30px;
+    height: 30px;
+    background-position: center;    
+    border: 3px solid #4e4e4e;    
+    transition: all .4s;
+}
+
+.header .result .refresh.rotate {
+	transform: rotate(180deg);
+}
+
+.header .result input:focus {
+	outline: none;
+}
+
+.main {
+	height: 100%;
+}
+
+.main .title {
+	text-align: center;
+}
+
+.main .record-wrap {
+	width: 1000px;
+	margin: 0 auto;	
+}
+
+.main .record-set {
+	display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;    
+    width: 624px;
+    height: 62px;
+    margin: 0 auto 16px;
+    background: #ffffff;
+    box-shadow: 3px 2px 4px 1px rgba(0, 0, 0, 0.3);
+    cursor: default;
+}
+
+.main .record-set .line {
+	width: 5px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.main .record-set .data {
+	font-size: 1.4rem;
+}
+
+.main .record-set .date {
+	font-size: 1rem;
+}
+
+.main .record-set .label {
+	font-size: 1rem;
+	margin-right: 4px;
+}
+
+.main .record-set .close-btn {
+	font-size: 1.4rem;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.footer {
+	position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+	display: flex;
+  	flex-direction: column;
+  	justify-content: center;
+  	align-items: center;
+  	height: 90px;
+  	background: #4e4e4e;
+}
+
+.footer .footer-logo {
+	width: 80px;
+	height: 80px;
+}
